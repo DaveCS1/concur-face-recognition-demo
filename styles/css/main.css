@@ -1,0 +1,163 @@
+body {
+    padding-top: 70px;
+}
+
+td {
+	padding : 12px;
+}
+
+#video {
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
+}
+
+#canvas {
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
+}
+
+#div_snap {
+	width : 140px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+#div_video_home {
+	width : 640px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#div_snap_home {
+	width : 126px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+#div_pic_buttons {
+	width : 320px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+#div_pic_buttons button {
+	margin: 10px;
+}
+
+#video_canvas {
+	width : 320px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#canvas_to_upload_home {
+  vertical-align: middle;
+	width : 324px;
+	max-height: 244px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid #000;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#div_tabs {
+	width : 350px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+#div_sticky_reset {
+	width : 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+#reset {
+	margin-left: 20px;
+}
+
+#div_map {
+	width : 780px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.list-group {
+	margin: 15px;
+  max-height: 149px; /* 210px */
+  overflow-y:scroll; 	
+}
+
+#circle01 {
+    width: 15px;
+    height: 15px;
+    background: red;
+}
+
+#circle02 {
+    width: 15px;
+    height: 15px;
+    background: green;
+}
+
+#circle03 {
+    width: 15px;
+    height: 15px;
+    background: blue;
+}
+
+#circle04 {
+    width: 15px;
+    height: 15px;
+    background: orange;
+}
+
+#circle05 {
+    width: 15px;
+    height: 15px;
+    background: pink;
+}
+
+.circle {
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.modal {
+	display:    none;
+	position:   fixed;
+	z-index:    1000;
+	top:        0;
+	left:       0;
+	height:     100%;
+	width:      100%;
+	background: rgba( 255, 255, 255, .8 )
+							url('https://i.stack.imgur.com/FhHRx.gif')
+							50% 50%
+							no-repeat;
+}
+
+/* When the body has the loading class, we turn
+ the scrollbar off with overflow:hidden */
+body.loading {
+	overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+ modal element will be visible */
+body.loading .modal {
+	display: block;
+}

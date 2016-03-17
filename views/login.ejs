@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles/css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Concur Kiosk</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Train</a></li>
+          <li><a href="/kiosk">Kiosk</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1>Concur Kiosk</h1>
+
+      <p>Authenticate to Concur with your face.</p>
+    </div>
+
+    <div class="starter-template">
+      <div class="text-center">
+        <a href="/auth/login"><img src="/styles/img/log_in_button_dark_med.png"></a>
+        <button id="btn_kiosk" type="button" class="btn btn-primary btn-lg" data-loading-text="Loading..." autocomplete="off">Go to Kiosk</button>
+        <!-- button id="btn_kiosk">Go to Kiosk</button></div> -->
+      </div>
+
+      <script>
+        // Trigger kiosk
+        document.getElementById("btn_kiosk").addEventListener("click", function() {
+          window.location.replace('/kiosk');
+        });
+      </script>
+    </div>
+
+
+</body>
+
+</html>

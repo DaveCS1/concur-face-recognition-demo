@@ -1,0 +1,8 @@
+{
+  "name": "Concur Face Recognition Demo",
+  "description": "A sample nodejs app that uses Microsoft Project Oxford face recognition to authenticate to Concur",
+  "repository": "https://github.com/heroku/node-js-getting-started",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static", "face", "recognition"],
+  "image": "heroku/nodejs"
+}
